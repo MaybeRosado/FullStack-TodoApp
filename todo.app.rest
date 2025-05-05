@@ -1,0 +1,21 @@
+### GET /
+GET http://localhost:3000
+
+### Register a user to /auth/register
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username": "johndoe@test.com",
+    "password": "12312345"
+}
+
+
+### Login a user to /auth/login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "johndoe@test.com",
+    "password": "12312345"
+}
