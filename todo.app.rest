@@ -19,3 +19,25 @@ Content-Type: application/json
     "username": "johndoe@test.com",
     "password": "12312345"
 }
+
+###Fetch all todos GET /todos (protected route)
+GET http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ2NTU1NDA1LCJleHAiOjE3NDY2NDE4MDV9.5hRRuIRMTOESzZzuBxQfUvhjJ5jFu9hXP4OWkakNZC4
+
+### Create a new todo POST /todos (protected route)
+POST http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ2NTU1NDA1LCJleHAiOjE3NDY2NDE4MDV9.5hRRuIRMTOESzZzuBxQfUvhjJ5jFu9hXP4OWkakNZC4
+Content-Type: application/json
+
+{
+    "task": "Learn Node.js"
+}
+
+###Update a todo PUT /todos/:id (protected route)
+PUT http://localhost:3000/todos/3?
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ2NTU1NDA1LCJleHAiOjE3NDY2NDE4MDV9.5hRRuIRMTOESzZzuBxQfUvhjJ5jFu9hXP4OWkakNZC4
+Content-Type: application/json
+
+{
+    "completed": 1
+}
