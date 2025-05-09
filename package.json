@@ -10,10 +10,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "Full Stack todo app with authentication and authorization using JWT",
+  "description": "Dockerized full Stack todo app that uses NodeJS, PostgreSQL, Prisma ORM and authorization using JWT",
   "dependencies": {
+    "@prisma/client": "^6.7.0",
     "bcryptjs": "^3.0.2",
     "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.15.6",
+    "prisma": "^6.7.0"
   }
 }
